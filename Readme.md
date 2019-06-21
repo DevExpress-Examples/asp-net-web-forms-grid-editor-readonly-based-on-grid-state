@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxGridView - How to make field editors read-only/editable when editing or adding a row
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e5116/)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to set the editor's ReadOnly property based on the grid's state. That is, it is possible to edit a field value while adding a new row, but this editor becomes ReadOnly on an attempt to edit the existing row.</p>
