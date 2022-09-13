@@ -33,4 +33,4 @@ protected void gridView_CellEditorInitialize(object sender, ASPxGridViewEditorEv
 
 ## More Examples
 
--[Grid View for ASP.NET WebForms - How to assign calculated values to the Edit Form on the client and server sides](https://github.com/DevExpress-Examples/aspxgridview-set-edit-form-values)
+- [Grid View for ASP.NET WebForms - How to assign calculated values to the Edit Form on the client and server sides](https://github.com/DevExpress-Examples/aspxgridview-set-edit-form-values)
