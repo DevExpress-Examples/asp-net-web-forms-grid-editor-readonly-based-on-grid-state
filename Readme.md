@@ -3,45 +3,34 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5116)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-
-* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
-* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
-<!-- default file list end -->
-# ASPxGridView - How to make field editors read-only/editable when editing or adding a row
+# Grid View for ASP.NET WebForms - How to conditionally make cell editors read-only
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/128535020/)**
 <!-- run online end -->
 
+## Implementation Details
 
-<p>This example demonstrates how to set the editor's ReadOnly property based on the grid's state. That is, it is possible to edit a field value while adding a new row, but this editor becomes ReadOnly on an attempt to edit the existing row.</p>
-<p><br>It is used the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxGridViewASPxGridView_CellEditorInitializetopic"><u>ASPxGridView.CellEditorInitialize</u></a> event to implement this scenario:<br>Starting with version 14.2:</p>
+This example demonstrates how to set a grid cell editor's `ReadOnly` property based on the grid's state. The example application allows you to edit a field value in a new row, but the editor becomes read-only when you try to edit an existing row.
 
+The ReadOnly property is set in the [ASPxGridView.CellEditorInitialize](http://documentation.devexpress.com/#AspNet/DevExpressWebASPxGridViewASPxGridView_CellEditorInitializetopic) event handler based on the value of the [IsNewRowEditing](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.IsNewRowEditing) property.
 
 ```cs
-protected void gridView_CellEditorInitialize(object sender, DevExpress.Web.ASPxGridViewEditorEventArgs e) {
+protected void gridView_CellEditorInitialize(object sender, ASPxGridViewEditorEventArgs e) {
 	ASPxGridView grid = sender as ASPxGridView;
 	if (e.Column.FieldName == "CategoryID")
 		e.Editor.ReadOnly = !grid.IsNewRowEditing;
 }
 ```
 
+## Files to Look At
 
-<p>For older versions:</p>
+- [Default.aspx](./CS/Solution/Default.aspx) (VB: [Default.aspx](./VB/Solution/Default.aspx))
+- [Default.aspx.cs](./CS/Solution/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Solution/Default.aspx.vb))
 
+## Documentation
 
-```cs
-protected void gridView_CellEditorInitialize(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewEditorEventArgs e) {
-	ASPxGridView grid = sender as ASPxGridView;
-	if (e.Column.FieldName == "CategoryID")
-		e.Editor.ReadOnly = !grid.IsNewRowEditing;
-}
-```
+- [Edit Data](https://docs.devexpress.com/AspNet/3712/components/grid-view/concepts/edit-data)
 
+## More Examples
 
-<p> </p>
-
-<br/>
-
-
+-[Grid View for ASP.NET WebForms - How to assign calculated values to the Edit Form on the client and server sides](https://github.com/DevExpress-Examples/aspxgridview-set-edit-form-values)
