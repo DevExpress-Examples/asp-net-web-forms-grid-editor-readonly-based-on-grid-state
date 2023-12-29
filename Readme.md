@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET WebForms - How to conditionally make cell editors read-only
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128535020/)**
-<!-- run online end -->
 
 ## Implementation Details
 
