@@ -33,7 +33,7 @@ protected void gridView_CellEditorInitialize(object sender, ASPxGridViewEditorEv
 
 - [Grid View for ASP.NET WebForms - How to assign calculated values to the Edit Form on the client and server sides](https://github.com/DevExpress-Examples/aspxgridview-set-edit-form-values)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-editor-readonly-based-on-grid-state&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-editor-readonly-based-on-grid-state&~~~was_helpful=no)
 
